@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@100&display=swap');
+
+:root {
+    --dark: #222222;
+    --light: #F2F2F2;
+    --light-blue: #77A5FF;
+    --dark-blue: #000E2A;
+} 
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--dark-blue);
+    color: var(--light);
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacts * {
+    margin: 0;
+}
