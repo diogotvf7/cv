@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans:wght@100&display=swap');
 
 :root {
     --dark: #222222;
@@ -7,18 +7,122 @@
     --dark-blue: #000E2A;
 } 
 
-header {
+body {
+    background-color: var(--light);
+    margin: 0;
+}
+
+.page {
+    width: 21cm;
+    height: 29.7cm;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header {
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: var(--dark-blue);
     color: var(--light);
 }
 
 #contacts {
+    background-color: var(--light-blue);
+    padding: 1em;
+    border-radius: 1em;
     display: flex;
     flex-direction: column;
+    font-weight: 600;
 }
 
 #contacts * {
+    margin: .1em;
+    color: var(--white);
+}
+
+#contacts i {
+    padding-right: 1em;
+}
+
+#contacts p {
+    white-space: nowrap;
+}
+
+.container {
+    display: flex;
+}
+
+.container h3 {
+    font-family: 'Montserrat', sans-serif;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--light);
     margin: 0;
+    padding: 0 .5em;
+}
+
+.container ul {
+    list-style: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding-right: 1em;
+}
+
+.date {
+    white-space: nowrap;
+} 
+
+.date i {
+    padding-right: .2em;
+}
+
+#cambridge-exam {
+    margin: 0;
+    padding: 0;
+}
+
+#cambridge-exam h2 {
+    background-color: var(--dark);
+    color: var(--light);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    height: 2em;
+}
+
+#cambridge-exam-images {
+    display: flex;
+}
+
+#cambridge-exam-images img {
+    width: 50%;
+}
+
+.tech {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tech img {
+    max-width: 16px;
+    max-height: 16px;
+    padding-right: 8px;
+    padding-left: 8px;
 }
